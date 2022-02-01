@@ -1,0 +1,257 @@
+/*-----------------------------------------------------------------*/
+/* Adsup
+/*-----------------------------------------------------------------*/
+.adsup{
+    width: 100%;
+    height: 400;
+}
+
+/*-----------------------------------------------------------------*/
+/* Ads
+/*-----------------------------------------------------------------*/
+.ads {
+    background: #adbed2;
+    width: 100%;
+    height: 20px;
+}
+
+.container{
+    text-align: center;
+}
+
+.container .con-l{
+    margin-top: 40px;
+    margin-left: 157px;
+    width: 600px;
+    height: 500px;
+}
+
+.container .con-r {
+    margin-top: -500px;
+    margin-left: 640px;
+}
+.container .con-r .imgr {
+    margin-top: 10px;
+}
+
+/*-----------------------------------------------------------------*/
+/* Category
+/*-----------------------------------------------------------------*/
+#cate{
+    width: 100%;
+    height: 300px;
+}
+
+#cate .container{
+    margin-top: 40px;
+}
+
+#cate .card-group {
+    width: auto;
+    margin-top: 15px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#cate .card-group :hover {
+    background: #c9c9c9;
+}
+
+#cate .card-img-top {
+    width: 64px;
+    margin: auto auto;
+    padding-top: 15px;
+}
+
+/*-----------------------------------------------------------------*/
+/* Product
+/*-----------------------------------------------------------------*/
+#product{
+    width: 100%;
+    height: 680px;
+    background-color: #6b6b6a;
+    margin-top: -50px;
+}
+
+#product .container{
+    padding-top: 25px;
+}
+
+#product .card-img-top {
+    height: 400px;
+    margin: auto auto;
+}
+
+/*-----------------------------------------------------------------*/
+/* productdetail
+/*-----------------------------------------------------------------*/
+#productproductdetail{
+    width: 100%;
+    height: 400px;
+    background-color: #f3efe7;
+    margin-top: 20px;
+}
+#productdetail .container{
+    padding-top: 25px;
+}
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+    
+}
+
+/*--------------------------------------------------------------
+General styles
+--------------------------------------------------------------*/
+.site {
+	background: #f3efe7;
+	min-height: 100vh;
+}
+
+.masthead,
+.main-content,
+.sidebar,
+.twin,
+.footer {
+	padding: 1em 2em;
+}
+
+.main-content {
+	background: white;
+}
+.masthead {
+	background: #f3efe7;
+	color: white;
+}
+
+.sidebar {
+	background: #D3D3D3;
+    color: white;
+}
+
+.twin {
+	background: #EADDCA;
+}
+
+.twin:last-of-type {
+	background: #C19A6B;
+}
+
+.colophon {
+	padding: 2em;
+	background: #3E454C;
+	color: white;
+}
+
+.colophon a {
+	color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+	border-bottom: 1px solid white;
+}
+
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+	.site {
+		max-width: 50em;
+		margin: 0 auto;
+	}
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 600px) {
+	@supports (display: grid) {
+
+		.site {
+			display: grid;
+			grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+			grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+		}
+
+		.masthead,
+		.colophon {
+			grid-column: span 8;
+		}
+
+		.main-content {
+			grid-column: 2/6;
+		}
+
+		.sidebar {
+			grid-column: 6/8;
+		}
+
+		.twin {
+			grid-column: 2/5;
+			grid-row: 3/4;
+		}
+
+		.twin:last-of-type {
+			grid-column: 5/8;
+		}
+
+	}
+}

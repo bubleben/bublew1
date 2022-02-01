@@ -1,0 +1,56 @@
+/*-----------------------------------------------------------------*/
+/* Navbar
+/*-----------------------------------------------------------------*/
+.navup {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    color: #000;
+    font-size: 32px;
+    display: grid;
+}
+/*-----------------------------------------------------------------*/
+/* Ads
+/*-----------------------------------------------------------------*/
+.ads {
+    background: #adbed2;
+    width: 100%;
+    height: 450px;
+}
+
+.container{
+    text-align: center;
+}
+
+.container .con-l{
+    margin-top: 40px;
+    margin-left: 157px;
+    width: 600px;
+    height: 500px;
+}
+
+.container .con-r {
+    margin-top: -500px;
+    margin-left: 640px;
+}
+.container .con-r .imgr {
+    margin-top: 10px;
+}
+
+/*-----------------------------------------------------------------*/
+/* Category
+/*-----------------------------------------------------------------*/
+.card-group {
+    width: auto;
+    margin-top: 10px;
+}
+
+.card-group :hover {
+    background: #adbed2;
+}
+
+.card-img-top {
+    width: 64px;
+    margin: auto auto;
+    padding-top: 15px;
+}
